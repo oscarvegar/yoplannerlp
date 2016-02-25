@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <title>Yo Planner - Agencia de Viajes – Hoteles, Vuelos y Cruceros - Organización y Planeación de Viajes y Grupos</title>
+       <meta name="description" content="Yo Planner es tu agencia de viajes en México y el extranjero para cuando quieras organizar Meetings para tu empresa, cotizar grupos en línea o asesorías para viajes individuales. ¡Ingresa y Cotiza los mejores hoteles en todos los destinos de México y el extranjero! ¡Reserva en nuestra plaforma y obtén todo para tu viaje!">
+       <meta name="keywords" content="agencias de viajes,agencia de viajes,agencia de viajes df,Agencias de iajes en df,YoPlanner,Yo Planner,Yoplaner,Yo Planer,Agentes de viajes,Agentes de viaje y turismo,oteles economicos,Hoteles en Mexico,Cotizador de hoteles,Hoteles baratos,Hoteles de playas,Hoteles en uidad,Hoteles gran turismo,Hoteles Resort,Hoteles 5 estrellas,Hoteles cinco estrellas,Hoteles precios,otizador de Hoteles en linea,Hoteles online,Cotizar hotel,hoteles en acapulco,hoteles en acapulco,entas de viajes,hoteles en cancun,operadoras de viajes,hoteles en cancun,agente de viaje,hoteles en eracruz,empresas de viaje,hoteles,agensias de viajes,hoteles en veracruz,agecia de viajes,hoteles en uerto vallarta,operadora de viajes,hoteles en puerto vallarta,operadores de viajes,hoteles en puerto allarta,paginas de viajes,hoteles en guanajuato,compañia de viajes,hoteles en monterrey,agenci de iajes,hoteles en guadalajara,gencias de viajes,vallarta plus,servicios de viaje,hoteles en guadalajara,vallarta plus,hoteles en guadalajara,hoteles en playa del carmen,hoteles en laya del carmen,hoteles en huatulco,hoteles en ixtapa,hoteles en huatulco,hoteles en ixtapa,hoteles en ixtapa,nuevo vallarta,hoteles en nuevo vallarta,hoteles en nuevo vallarta">
+      <meta property="og:image" content="http://yoplanner.com/img/HotelesYoPlanner.png" >
+      <meta property="og:url" content="http://yoplanner.com">
+      <meta property="og:title" content="Yo Planner - Agencia de Viajes – Hoteles, Vuelos y Cruceros - Organización y Planeación de Viajes y Grupos" >
+      <meta property="og:description" content="Yo Planner es tu agencia de viajes en México y el extranjero para cuando quieras organizar Meetings para tu empresa, cotizar grupos en línea o asesorías para viajes individuales. ¡Ingresa y Cotiza los mejores hoteles en todos los destinos de México y el extranjero! ¡Reserva en nuestra plaforma y obtén todo para tu viaje!" />
+       
+       
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,200,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Theme CSS -->
+        <link href="css/style.css" rel="stylesheet" media="screen">
+        <!-- Responsive CSS -->
+        <link href="css/theme-responsive.css" rel="stylesheet" media="screen">
+        <!-- Skins Theme -->
+        <link href="css/skins/blue/blue.css" rel="stylesheet" media="screen">
+		
+      
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/icons/favico.ico">
+        <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">  
+
+        <!-- Head Libs -->
+        <script src="js/modernizr.js"></script>
+
+        <!--[if IE]>
+            <link rel="stylesheet" href="css/ie/ie.css">
+        <![endif]-->
+
+        <!--[if lte IE 8]>
+            <script src="js/responsive/html5shiv.js"></script>
+            <script src="js/responsive/respond.js"></script>
+        <![endif]-->
+    </head>
+    <body ng-app="yoplanner.cotizar">
+        <!--Preloader-->
+        <div class="preloader">
+            <div class="status">&nbsp;</div>
+        </div>
+        <!--End Preloader-->
+    
+
+        <!-- layout-->
+        <div id="layout">
+            <!-- Header-->
+            <header id="header" class="header-v1">
+                <!-- Main Nav -->
+                <nav class="flat-mega-menu">            
+                    <!-- flat-mega-menu class -->
+                    <label for="mobile-button"> <i class="fa fa-bars"></i></label><!-- mobile click button to show menu -->
+                    <input id="mobile-button" type="checkbox">                          
+
+                    <ul class="collapse"><!-- collapse class for collapse the drop down -->
+                        <!-- website title - Logo class -->
+                        
+					<li class="title">
+                      <a href="#"><img src="img/logo.png" style="margin-left:0px;position:absolute;height:60px;background-color: transparent;border:0;margin-top:0px;width:200px;box-shadow:0px 0px 0px 0px; "></a> 
+
+                    </li>                        <!-- End website title - Logo class -->
+
+					<li><a href="index.html">INICIO </a></li>
+
+                    <li> <a href="#">¿QUIÉNES SOMOS?</a></li>
+
+                    <li> <a href="javascript:void(0);">SERVICIOS</a>
+                      <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
+                        <!-- li><a ui-sref="nuestros_servicios">Nuestros Servicios</a> </li -->
+                        <li><a href="#">Meetings</a> </li>
+                        <li><a href="#">Agencia De Viajes</a> </li>
+                        <li><a href="#" ui-sref="mrktng_hoteles">Publicidad Para Hoteles</a> </li>
+                        <!-- <li><a ui-sref="influencer">Influencer</a> </li> -->
+                      </ul>
+                    </li>
+
+                    <li> <a href="#">BLOG</a></li>
+
+                    <li><a href="#" ui-sref="contact">CONTACTO</a></li>
+
+                    <li class="social-bar"> <a href="javascript:void(0);">SÍGUENOS</a> 
+                      <ul class="drop-down hover-zoom">
+                        <li class="facebook"> <a href="//facebook.com/yoplanner" target="_blank"><i class="fa fa-facebook"></i> </a> </li>
+                        <li class="twitter"> <a href="//twitter.com/yoplanner" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                        <li class="google-plus"> <a href="https://plus.google.com/113624413123385492768?prsrc=3" target="_blank"><i class="fa fa-google-plus"></i> </a> </li>
+                        <li class="youtube"> <a href="https://www.youtube.com/channel/UCqCEySy6lNMhn6KlPAtcddg" target="_blank"><i class="fa fa-youtube"></i> </a> </li>
+                      </ul>
+                    </li>
+
+                        <li class="search-bar"> <i class="fa fa-search"></i><!-- search bar -->
+                            <ul class="drop-down hover-expand">
+                                <li>
+                                    <form method="post" action="#">
+                                        <table>
+                                            <tr>
+                                                <td> <input type="search" required="required" name="serach_bar" placeholder="Type Keyword Here"> </td>
+                                                <td> <input type="submit" value="Search"> </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>           
+                    </ul>
+                </nav>
+                <!-- Main Nav -->
+            </header>
+            <!-- End Header-->
+
+            <!-- Section Title-->    
+            <div class="section-title-02">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h1>Contacta un Planner</h1>
+                        </div>
+                    </div>
+                </div>  
+            </div>   
+            <!-- End Section Title-->
+
+            <!--Content Central -->
+            <div class="content-central">
+                
+                <!-- End content info - page Fill with -->
+                <div class="content_info">
+                    <div class="paddings-mini">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Sidebars -->
+                                
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-8" ng-controller="CotizarCtrl">
+                                    <h3>Cotizar</h3>
+                                    <!--<p class="lead">
+                                       Lorem ipsum dolor sit amet, ad vim erat posse. Cu nam doctus mentitum consulatu. Patrioque mnesarchum complectitur quo ex, utinam adipiscing dissentiunt mea an, id eos summo democritum. Pro et congue tation, est id iriure equidem antiopam. Suas case duo ne.
+                                    </p>-->
+                                    <form  class="form-theme" ng-submit="submit()">
+                                        <input type="text" placeholder="Nombre" ng-model="data.name" name="Name" required="">
+                                        <input type="email" placeholder="Email" ng-model="data.email" name="Email" required="">
+                                        <input type="text" placeholder="Teléfono " ng-model="data.phone" name="Phone" required="">
+                                        <select style="width:100%; padding:8px 5px; color:#aaa; border:#dedede solid 1px;" ng-model="data.tipo" required>
+                                        	<option value="">Tipo de evento</option>
+                                        	<option value="Viaje Personal">Viaje Personal</option>
+                                        	<option value="Viaje de Grupo">Viaje de Grupo</option>
+                                        	<option value="Evento Corporativo">Evento Corporativo</option>
+                                        	<option value="Evento Social">Evento Social</option>
+                                        	<option value="Crucero">Crucero</option>
+										                    </select>
+                                        <br>
+                                        <br>
+                                        <textarea ng-model="data.comments" placeholder="Comentarios..."></textarea>
+                                        <input type="submit" name="Submit" value="Enviar" class="btn btn-primary">
+                                    </form> 
+                                    <div id="result"></div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <!-- End content info - page Fill with  --> 
+
+            </div>
+            <!-- End Content Central -->
+      
+            <!-- footer-->
+      
+ <footer id="footer" class="footer-v1">
+                <div class="container">
+                  <div class="row">
+                    <!-- Title Footer-->
+                    <div class="col-md-5">
+                      <div class="title-footer">
+                        <h2>Entérate primero y ahorra en tus planes de viaje.
+                          <br> <span></span>
+                          <br> </h2>
+                      </div>
+
+                      <p></p>
+                    </div>
+                    <!-- End Title Footer-->
+
+                    <div class="col-md-7">
+                      <div class="row">                             
+                        <!-- Social Us-->
+                        <div class="col-md-3">
+                          <h3>SÍGUENOS</h3>
+                          <ul class="social">
+                            <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="//facebook.com/yoplanner">Facebook</a></li>
+                            <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="//twitter.com/yoplanner">Twitter</a></li>
+                            <li class="google-plus"><span><i class="fa fa-google-plus"></i></span><a href="https://plus.google.com/113624413123385492768?prsrc=3" target="_blank">Google +</a> </li>
+                            <li class="youtube"><span><i class="fa fa-youtube"></i></span><a href="https://www.youtube.com/channel/UCqCEySy6lNMhn6KlPAtcddg" target="_blank">YouTube</a> </li>
+                          </ul>
+                        </div>
+                        <!-- End Social Us-->
+
+                        <!-- Recent links-->
+                        <div class="col-md-5">
+                          <h3>SERVICIOS </h3>
+                          <ul>
+                            <li><i class="fa fa-check"></i> <a ui-sref="meetings">Meetings</a> </li>
+                            <li><i class="fa fa-check"></i> <a ui-sref="travel_agency">Agencia De Viajes</a> </li>
+                            <li><i class="fa fa-check"></i> <a ui-sref="mrktng_hoteles">Publicidad Para Hoteles</a> </li>
+                          </ul>
+                        </div>
+                        <!-- End Recent links-->
+
+                        <!-- Contact Us-->
+                        <div class="col-md-4">
+                          <h3>CONTÁCTANOS</h3>
+                          <ul class="contact_footer">
+                            <li>
+                              <i class="fa fa-envelope"></i> <a href="mailto:contacto@yoplanner.com">contacto@yoplanner.com</a>
+                            </li>
+                            <li>
+                              <i class="fa fa-headphones"></i> <a href="#">(55) 6274 - 6291</a>
+                            </li>
+                            <li class="location">
+                              <i class="fa fa-home"></i>
+                              <a href="#">
+                                  México, D. F.
+                              </a>
+                            </li>                                   
+                          </ul>
+                        </div>
+                        <!-- Contact Us-->
+                      </div>  
+
+                      <div class="divisor"></div>
+
+                      <div class="row">
+                        <!-- Newsletter-->
+                        <div class="col-md-12">
+                          <h3>¡Suscríbase a nuestro boletín!</h3>  
+                          <form id="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <div class="input-group">
+                                  <span class="input-group-addon">
+                                    <i class="fa fa-user"></i>
+                                  </span>
+                                  <input class="form-control" placeholder="Your Name" name="name" type="text" required="required">
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <div class="input-group">
+                                  <span class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                  </span>
+                                  <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                </span>
+                              </div>
+                            </div>
+                          </form>   
+                          <div id="result-newsletter"></div>
+                        </div>
+                        <!-- end Newsletter-->
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+
+                <!-- footer Down-->
+                <div class="footer-down">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <p>&copy; 2015 YoPlanner . All Rights Reserved.  2010 - 2015</p>
+                      </div>
+                      <div class="col-md-7">
+                        <!-- Nav Footer-->
+                        <ul class="nav-footer">
+                          <li><a ui-sref="index.html">INICIO</a> </li>
+                          <li><a ui-sref="#">HOTELES</a></li>
+                          <li><a ui-sref="#">VUELOS</a></li>
+                          <li><a ui-sref="#">CRUCEROS</a></li>
+                          <li><a ui-sref="#">POLÍTICAS DE PRIVACIDAD</a></li>
+                          <li><a ui-sref="#">CONTACTO</a></li>
+                        </ul>
+                        <!-- End Nav Footer-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- footer Down-->
+              </footer>      
+              <!-- End footer-->        </div>
+        <!-- End layout-->
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local--> 
+        <script src="js/jquery.js"></script>  
+        <script src="js/jquery-ui.1.10.4.min.js"></script>                
+        <!--Nav-->
+        <script src="js/nav/jquery.sticky.js" type="text/javascript"></script>    
+        <!--Totop-->
+        <script type="text/javascript" src="js/totop/jquery.ui.totop.js" ></script>  
+         <!--Accorodion-->
+        <script type="text/javascript" src="js/accordion/accordion.js" ></script>  
+        <!--Slide Revolution-->
+        <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.tools.min.js" ></script>      
+        <script type='text/javascript' src='js/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>    
+        <!-- Maps -->
+        <script src="js/maps/gmap3.js"></script>            
+        <!--Ligbox--> 
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script> 
+        <!-- carousel.js-->
+        <script src="js/carousel/carousel.js"></script>
+        <!-- Filter -->
+        <script src="js/filters/jquery.isotope.js" type="text/javascript"></script>
+        <!-- Twitter Feed-->
+        <script src="js/twitter/jquery.tweet.js"></script> 
+        <!-- flickr Feed-->
+        <script src="js/flickr/jflickrfeed.min.js"></script>    
+        <!--Theme Options-->
+        <script type="text/javascript" src="js/theme-options/theme-options.js"></script>
+        <script type="text/javascript" src="js/theme-options/jquery.cookies.js"></script> 
+        <!-- Bootstrap.js-->
+        <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script> 
+        <script type="text/javascript" src="js/bootstrap/bootstrap-slider.js"></script> 
+        <!--MAIN FUNCTIONS-->
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- ======================= End JQuery libs =========================== -->
+
+        <!--Slider Function-->
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery('.tp-banner').show().revolution({
+                    dottedOverlay:"none",
+                    delay:5000,
+                    startwidth:1170,
+                    startheight:925,
+                    minHeight:500,
+                    navigationType:"none",
+                    navigationArrows:"solo",
+                    navigationStyle:"preview1"
+                });             
+            }); //ready
+        </script>
+        <!--End Slider Function-->
+
+        <script type="text/javascript" src="js/angular/angular.min.js"></script>
+
+
+        <script type="text/javascript" src="ng/yp-cotizar.js"></script>
+
+    </body>
+</html>
