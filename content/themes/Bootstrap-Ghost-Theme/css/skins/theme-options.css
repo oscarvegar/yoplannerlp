@@ -11,7 +11,7 @@
 	transition: 0.5s all ease;
 }
 .content-central{	
-	max-width: 1230px;
+	max-width: 100%;
 	margin: 0px auto;
 	background: #fff;
 	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
@@ -23,7 +23,7 @@
 	margin-bottom: -150px;
 }
 .layout-semiboxed footer .container{
-	width: 1230px !important;
+	width: 100% !important;
 	padding: 0 !important;
 }
 .layout-wide .content-central{	
@@ -45,7 +45,7 @@
     left: 23%;
 }
 .layout-boxed{
-	max-width: 1230px;
+	max-width: 100%;
 	margin: 0 auto;
 	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
@@ -57,7 +57,7 @@
 	transition: 0.5s all ease;
 }
 .layout-boxed-margin{
-	max-width: 1230px;
+	max-width: 100%;
 	margin: 50px auto;
 	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
@@ -244,3 +244,4 @@
 	font-size: 11px;
 	color: #424242;
 }
+
