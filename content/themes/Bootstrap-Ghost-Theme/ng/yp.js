@@ -3,7 +3,7 @@ angular.module('yoplanner.blog',[])
 	
 	$scope.init = function(){
 
-		$http.get("/ghost/api/v0.1/posts?client_id=ghost-frontend&client_secret=b1914fda886b&include=author")
+		$http.get("/ghost/api/v0.1/posts?client_id=ghost-frontend&client_secret=0cfd201b3003&include=author")
 		.success(function(data){
 			console.log("POSTS",data.posts[1]);
 			$scope.posts = data.posts;
