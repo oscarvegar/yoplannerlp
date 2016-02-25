@@ -1,0 +1,129 @@
+$font-family-base: 'Ubuntu', sans-serif;
+
+@import 'bootstrap';
+@import 'clean-blog';
+
+img {
+	width: 100%;
+}
+
+body {
+	font-size: 18px;
+	font-family: $font-family-base;
+}
+
+#page-body {
+	font-family: $font-family-base;
+}
+
+pre > code {
+	font-size: 18px;
+}
+
+.site-heading > h1 {
+	font-family: 'Lobster', sans-serif;
+	text-shadow: 0 0 5px black;
+}
+
+.intro-header {
+	background-color: #203C49;
+}
+
+.tags > a {
+	background-color: white !important;
+	padding: 3px 10px;
+	margin: 3px;
+	display: inline-block;
+	position: static;
+	border-radius: 10px;
+}
+
+.img-logo-container {
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	margin: 10px auto 10px auto;
+	border-radius: 150px;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.img-logo {
+	width: 100%;
+	margin: 0 auto 0 auto;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.panel-post {
+	text-align: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: fixed;
+	background-attachment: center;
+	background-origin: center;
+	height: 300px;
+
+	&.panel-primary {
+		border: none;
+	}
+
+	> .panel-heading {
+		> .panel-title {
+			margin: 10px;
+			font-size: 30px;
+			text-shadow: 0 0 5px black;
+
+			&:hover, &:link, &:visited, &:active  {
+				color: white;
+				text-decoration: none;
+			}
+		}
+
+	&.panel-heading-loop {
+		background-color: rgba(255, 255, 255,0);
+		height: 300px;
+		transition: all 0.7s linear;
+		border: none;
+		&:hover {
+			background-color: rgba(0, 0, 0,0.8);
+		}
+
+		> .panel-title {
+			margin-top: 20px;
+			font-size: 30px;
+		}
+
+		> a:hover, a:focus {
+			text-decoration: none;
+		}
+	}
+
+	}
+
+	> .panel-body {
+		min-height: 150px;
+
+		&.panel-body-profile {
+			min-height: 300px;
+		}
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: fixed;
+		background-attachment: center;
+		background-origin: center;
+	}
+
+}
+
+img.emoji {
+  width: 16px;
+  height: 16px;
+ }
