@@ -76,7 +76,7 @@ var znewsTheme = {
 			homePosts.forEach(function(entry, index) {
 				var adJustPos = 'home_v_'+index;
 				$("#main-widgets").append('<div class="'+adJustPos+'"></div>');
-				$('.'+adJustPos).html('<img style="margin: 0 auto;display: block;padding:50px;" src="assets/images/loading.svg">');
+				$('.'+adJustPos).html('<img style="margin: 0 auto;display: block;padding:50px;" src="../assets/images/loading.svg">');
 			    if(entry.type == 'single'){
 			    	znewsTheme.showSimpleWidget(entry,adJustPos);
 			    } else if(entry.type == 'twocol'){
@@ -152,7 +152,7 @@ var znewsTheme = {
 				var feed_url = site_url+"/rss/";
 			}
 			var widgetCode = String('');
-			$('#top-widget').html('<img style="margin: 0 auto;display: block;padding:50px;" src="assets/images/loading.svg">');
+			$('#top-widget').html('<img style="margin: 0 auto;display: block;padding:50px;" src="../assets/images/loading.svg">');
 			$.get(feed_url, function(data) {
 				widgetCode += '<div class="single-box single-top-box top-box">';
 				var loopCount = 0;
