@@ -47,7 +47,7 @@ $(document).ready(function($) {
 	//=================================== Carousel Services  ==============================//	 
 	$("#single-carousel, #single-carousel-sidebar").owlCarousel({
 		  items : 1,
-		  autoPlay: 4000,  
+		  autoPlay: 3000,  
     	navigation : true,
     	autoHeight : true,
     	slideSpeed : 400,
@@ -57,7 +57,7 @@ $(document).ready(function($) {
 
   //=================================== Carousel features  ==================================//
   $("#slide-features").owlCarousel({
-      autoPlay: false,
+      autoPlay: true,
       items : 1,
       navigation : true,
       autoHeight : true,
