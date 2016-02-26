@@ -63,7 +63,7 @@ $(document).ready(function($) {
       autoHeight : true,
       slideSpeed : 400,
       singleItem: true,
-      pagination : true
+      pagination : false
   });
 
   //=================================== Carousel Boxes  ==================================//
