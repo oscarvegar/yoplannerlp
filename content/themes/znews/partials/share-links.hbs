@@ -1,0 +1,34 @@
+<div class="znews-share">
+	<div class="share">
+		<ul>
+			<li class="share-pin">
+				share
+			</li>
+			<!-- facebook -->
+			<li>
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, '', 'width=600,height=300');return false;"><i class="fa fa-facebook"></i></a>
+			</li>
+			<!-- twitter -->
+			<li>
+				<a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, '', 'width=600,height=400');return false;"><i class="fa fa-twitter"></i></a>
+			</li>
+			<!-- google plus -->
+			<li>
+				<a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, '', 'width=600,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+			</li>
+			<!-- reddit -->
+			<li>
+				<a target="_blank" href="http://reddit.com/submit?url={{url absolute="true"}}&title={{{title}}}"><i class="fa fa-reddit"></i></a>
+			</li>
+			<!-- linkedin -->
+			<li>
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, '', 'width=600,height=530');return false;"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<!-- pinterest -->
+			<li>
+				<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a>
+			</li>
+		</ul>
+		
+	</div>
+</div>

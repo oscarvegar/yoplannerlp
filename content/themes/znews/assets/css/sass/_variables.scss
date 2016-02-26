@@ -1,0 +1,80 @@
+$primary-color: #555; // primary color
+$body-bg: #fff; // body background color
+$znews-bg:#fff; // wrapper background color
+
+$link-color:#222; // link color
+$link-hover-color: #999; // link hover color
+$logo-color:#fff; // logo color
+$main-color:#222222; // main color
+
+$header-bg:#363B4E; // header background color
+
+$soc-color : $header-bg; // social widget background
+$soc-icon-color: #fff; // social icon color
+
+$newsticker-color: #fff; // news ticker color
+$ticker-heading-bg: #fff; // news ticker heading background color
+$ticker-heading-color:$header-bg; // heading color
+
+$navbar-bg:#fff; // navbar background color
+$navbar-color:$header-bg; // navbar link color
+$navbar-hover-color: #111; //navbar hover background color
+$navbar-hover-bg: #efefef; //navbar hover background color
+
+$search-btn-bg:$header-bg;// search button background color
+$search-btn-color:#eee;// search button icon color
+$search-btn-hover-bg:$header-bg; 
+$search-btn-hover-color:#fff; 
+
+$cover-image-color:#fff; // cover image text color
+$cover-bg-no-image:$header-bg; // cover image background color
+
+
+$tag-cloud-color:#fff; // tag cloud color
+$tag-cloud-hover-bg: $header-bg; // tag cloud hover nbackground
+$tag-cloud-hover-color:#fff; // tag cloud hover color
+
+$shadow-color:#999; // shadow color
+$znews-border:#eee; // thick bottom border color
+
+$znews-color:#fff; // default settings
+$fa-color:#363B4E; // icon color defaulted
+
+$top-widget-heading-bg:rgba(0, 0, 0, 0.44);
+$top-widget-heading-color:#fff;
+$home-page-title-color: #000; // color widget title color
+$home-page-widget-bg:#fff; // background color home widgets
+$home-page-widget-border:#ddd; // background color home widgets
+
+$post-tags-color:#222; // post page tags, share buttons below post color
+$post-share-text-bg:#eee; //share text background
+
+$prev-next-color:#fff; // previous and next page link color
+$related-link-color:#fff; // related posts link color
+
+$search-color:#000; // search pop color and border
+$search-close-color : #000; // search pop close button
+$search-result-color:#222; // search results color
+
+$sidebar-bg:#fff; // sidebar background color
+$widget-heading-color:#111; // widget heading color
+$recent-post-image-bg:#222; // recent post image background
+$recent-post-icon-color:#fff; // recent post icon color
+
+$email-subscribe-bg: #ddd; // email subscribe widget background
+$input-bg:#fff; // input background
+$input-color:#222; // input color
+$button-bg:#222; // button background
+$button-color:#fff; // button color
+$button-hover-bg:$header-bg; // button background
+$button-hover-color:#fff; // button color
+
+$four-h1-color:#E74C3C; // 404 page text colors
+$four-button-color:#fff; // 404 page button color
+$four-button-bg:#222; // 404 page button background
+
+$pagination-bg:#111; // pagination button background
+$pagination-color:#fff; // pagination color icon
+$footer-bg:#111; // footer background
+$footer-color:#fff; //footer text color  
+

@@ -1,0 +1,37 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{#post}}
+{{> post-cover}}
+<div class="container container-znews">
+    <div class="col-md-8">
+        <article class="post-outer single-post row znews-default">
+            <div class="post-content">
+                <h1 class="post-title">{{{title}}}</h1>
+                <div class="post-meta">
+                    {{#author}}
+                    <span class="author">
+                        <i class="fa fa-user"></i>
+                        <a href="{{url}}">{{name}}</a>
+                    </span>
+                    {{/author}}
+                    <span class="date">
+                        <i class="fa fa-calendar-o"></i>
+                        {{date format="MMM DD, YYYY"}}
+                    </span>
+                    <span class="comment">
+                        <i class="fa fa-comment-o"></i>
+                        <a href="{{url}}#disqus_thread">0 Comments</a>
+                    </span>
+                </div>
+                <div class="post-description">
+                    {{content}}
+                </div>
+                {{> share-links}}
+            </div>
+        </article>
+        {{> about-author}}
+        {{> comment}}
+    </div>
+    {{> sidebar}}
+</div>
+{{/post}}

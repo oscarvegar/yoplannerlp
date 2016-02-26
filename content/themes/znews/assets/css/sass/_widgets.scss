@@ -1,0 +1,75 @@
+.sidebar {
+  padding-right:0px;
+  font-family: "Montserrat", sans-serif;
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
+  .znews-widget{
+    .content{
+      background: $sidebar-bg;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $home-page-widget-border;
+    }
+    .fb-widget{
+      text-align: center;
+    }
+    h3{
+      padding: 6px 0;
+      position: relative;
+      margin: 0;
+      text-align: left;
+      font-size: 22px;
+      font-family: 'Lora',sans-serif;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      span{
+        padding: 8px 0;
+        color: $widget-heading-color;
+      }
+    }
+    .tags{
+      a{
+        background: $main-color;
+        color: $tag-cloud-color;
+        margin: 0 6px 6px 0;
+        padding: 6px 9px;
+        line-height: 1em;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+      }
+      a:hover {
+        background: $tag-cloud-hover-bg;
+        color: $tag-cloud-color;
+      }
+    }
+  }
+  .recent-post{
+    .recent-single-post{
+      margin-bottom:10px;
+      .post-img{     
+        background: $recent-post-image-bg;
+        background-size: cover;
+        background-position: center;
+        height: 80px;
+        width: 80px;
+        float: left;
+        margin-right: 10px;
+        .fa{
+          color: $recent-post-icon-color;
+          font-size: 60px;
+          line-height: 80px;
+          padding-left: 8px;
+        }                              
+      }
+    }
+  }
+}
+.post-info{
+  .date{
+    font-style: normal;
+    font-size: 13px;
+    color: #444;
+  }
+}

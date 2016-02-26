@@ -1,0 +1,35 @@
+<nav class="navbar navbar-inverse navbar-znews">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		    {{#if @blog.logo}}
+			<a class="navbar-brand logo tiny-logo" href="{{@blog.url}}">
+				<img src="{{@blog.logo}}" alt="{{@blog.title}}">
+			</a>
+			{{else}}
+			<a class="navbar-brand no-logo" href="{{@blog.url}}">
+				{{@blog.title}}
+			</a>
+			{{/if}}
+		</div>
+		<div id="navbar" class="navbar-collapse navbar-left collapse">
+			<ul class="nav navbar-nav">
+				{{#foreach navigation}}
+				<li class="{{slug}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+				{{/foreach}}
+			</ul>
+		</div>
+		<div class="navbar-right">
+			<ul class="nav navbar-nav navbar-search-right">
+				<li class="znews-search">
+					<a class="search-nav-btn"><i class="fa fa-search"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

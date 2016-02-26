@@ -1,0 +1,27 @@
+{{#author}}
+<div class="post-author row znews-default">
+	{{#if image}}
+		<a href="{{url}}"><img class="thumbnail" src="{{image}}" alt="{{name}}"></a>
+		{{else}}
+		<a href="{{url}}"><img class="thumbnail" src="{{asset "images/default-user-image.jpg"}}" alt="{{name}}"></a>
+	{{/if}}
+	<div class="author-details">
+		<div class="author">
+			<h3><a href="{{url}}">{{name}}</a></h3>
+		</div>
+		<div class="author-info">
+			{{#if location}}
+			<span><i class="fa fa-home fa-fw"></i>{{location}}</span>
+			{{/if}}
+			{{#if website}}
+			<span><i class="fa fa-globe fa-fw"></i><a href="{{website}}" targer="_blank">Website</a></span>
+			{{/if}}
+		</div>
+	</div>
+	{{#if bio}}
+	<div class="author-bio">
+		{{bio}}
+	</div>
+	{{/if}}	
+</div>
+{{/author}}

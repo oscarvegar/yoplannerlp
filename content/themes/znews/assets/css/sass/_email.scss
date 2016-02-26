@@ -1,0 +1,39 @@
+.email-subscribe {
+  padding: 26px;
+  background: $email-subscribe-bg;
+  input {
+    border: none;
+    width: 100%;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    height: 45px;
+    font-size: 15px;
+    line-height: 19px;
+    font-style: italic;
+  }
+  input[type="email"], input[type="text"], input[type="number"] {
+    background: $input-bg;
+    color: $input-color;
+    margin-top: 18px;
+  }
+  input[type="submit"], input[type="submit"], button {
+    font-family: "Montserrat", sans-serif;
+    background: $button-bg;
+    color: $button-color;
+    margin-top: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  input[type="submit"]:hover, input[type="submit"]:hover, button:hover {
+    background: $button-hover-bg;
+    color: $button-hover-color;
+  }
+}

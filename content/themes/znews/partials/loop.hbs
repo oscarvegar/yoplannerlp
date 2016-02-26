@@ -1,0 +1,50 @@
+<article class="post-outer row znews-default">
+    {{#if featured}}
+    <div class="featured-post">
+        <span class="label-f">Featured</span>
+        <img alt="{{title}}" src="{{asset "images/featured.svg"}}">
+    </div>
+    {{/if}}
+    {{#if image}}
+    <div class="col-lg-5 col-md-5 col-sm-6 recent-post-image">
+    <a href="{{url}}" title="{{{title}}}">
+        <div class="featured-post-img znews-default imgbg" style="background-image: url({{image}});"></div>
+    </a>
+    </div>
+    {{else}}
+    <div id="mepost-{{id}}"></div>
+    {{/if}}
+    <div id="post-post-{{id}}" class="post-content {{#if image}}col-lg-7 col-md-7 col-sm-6{{else}} col-lg-12 col-md-12 col-sm-12{{/if}}">
+        <h2 class="post-title">
+            <a href="{{url}}">{{title}}</a>
+        </h2>
+        <div class="post-meta">
+            {{#author}}
+            <span class="author">
+                <i class="fa fa-user"></i>
+                <a href="{{url}}">{{name}}</a>
+            </span>
+            {{/author}}
+            <span class="date">
+                <i class="fa fa-calendar-o"></i>
+                {{date format="MMM DD, YYYY"}}
+            </span>
+            <span class="comment">
+                <i class="fa fa-comment-o"></i>
+                <a href="{{url}}#disqus_thread">0 Comments</a>
+            </span>
+        </div>
+        <div class="post-description" id="post-{{id}}">
+            {{#if image}}
+            {{excerpt words="30"}}
+            {{else}}
+            {{content words="110"}}
+            {{/if}}
+        </div>
+        {{#unless image}}
+        <script>
+            createSummaryAndThumb('post-{{id}}','{{url}}');
+        </script>
+        {{/unless}}
+    </div>
+</article>

@@ -1,0 +1,68 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{#post}}
+{{> post-cover}}
+<div class="container container-znews">
+    <div class="col-md-8">
+        <article class="post-outer single-post row znews-default">
+            <div class="post-content">
+                <h1 class="post-title">{{{title}}}</h1>
+                <div class="post-meta">
+                    {{#author}}
+                    <span class="author">
+                        <i class="fa fa-user"></i>
+                        <a href="{{url}}">{{name}}</a>
+                    </span>
+                    {{/author}}
+                    <span class="date">
+                        <i class="fa fa-calendar-o"></i>
+                        {{date format="MMM DD, YYYY"}}
+                    </span>
+                    <span class="comment">
+                        <i class="fa fa-comment-o"></i>
+                        <a href="{{url}}#disqus_thread">0 Comments</a>
+                    </span>
+                </div>
+                <div class="post-description">
+                    {{content}}
+                </div>
+                {{#if "tags"}}
+                <div class="post-tags-post">
+                    <i class="fa fa-tag fa-fw"></i>
+                    {{tags separator=", "}}
+                </div>
+                {{/if}}
+                {{> share-links}}
+            </div>
+        </article>
+        {{> about-author}}
+        <div class="znews-prev-next row znews-default">
+            <div class="col-md-6 prev-next-col">
+            {{#next_post}}
+                <a href="{{url}}" class="pull-left prev-next-nav bg-prev-next {{#if image}}" style="background-image: url({{image}}) ;"{{else}}no-bg-prev-nexr"{{/if}}>
+                    <div class="prev-next">
+                        <span><i class="fa fa-angle-left fa-fw"></i>Previous Post</span>
+                        <h3>{{title}}</h3>
+                    </div>
+                </a>
+            {{/next_post}}
+            </div>
+            <div class="col-md-6 prev-next-col">
+            {{#prev_post}}
+                <a href="{{url}}" class="pull-right prev-next-nav bg-prev-next {{#if image}}" style="background-image: url({{image}}) ;"{{else}}no-bg-prev-nexr"{{/if}}>
+                    <div class="prev-next">
+                        <span>Next Post<i class="fa fa-angle-right fa-fw"></i></span>
+                        <h3>{{title}}</h3>
+                    </div>
+                </a>
+            {{/prev_post}}
+            </div>
+        </div>
+        <div class="related-posts row znews-default">
+            <h3>Related posts</h3>
+        </div>
+        {{> comment}}
+    </div>
+    {{> sidebar}}
+</div>
+{{/post}}

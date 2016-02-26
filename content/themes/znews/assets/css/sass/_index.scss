@@ -1,0 +1,94 @@
+.post-outer {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0 20px;
+  .featured-post-img {
+    background-size: cover;
+    background-position: center;
+    height: 215px;
+    margin-bottom: 20px;
+  }
+  .post-title{
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  .fa{
+    color: $fa-color;
+  }
+  .recent-post-image{
+    padding:0px;
+  }
+}
+/* ====================================   
+Featured post in loop 
+===================================== */
+.featured-post{
+  display: block;
+  position: absolute;
+  width: 146px;
+  height: 46px;
+  left: -32px;
+  top: -13px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding-top: 2px;
+  text-transform: uppercase;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 1;
+  .label-f{
+    position: relative;
+    top: -3px;
+    z-index: 1;
+  }
+  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+}
+/* ====================================   
+Post meta in index 
+===================================== */
+.post-meta{
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.post-meta span{
+  margin-right: 10px;
+}
+/* ====================================   
+Pagination 
+===================================== */
+.znews-pagination{
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  font-style: italic;
+  .page-counts{
+    text-align: center;
+  }
+  .new-posts{
+    float: left;
+  }
+  .old-posts{
+    float: right;
+  }
+  .old-posts, .new-posts{
+    padding: 10px 15px;
+    background: $pagination-bg;
+    color:$pagination-color;
+    border-radius: 50%;
+    .fa{
+      font-size: 14px;
+    }
+  }
+}

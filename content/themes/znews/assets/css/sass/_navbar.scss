@@ -1,0 +1,60 @@
+.navbar{
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.navbar-znews{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    min-height: 50px;
+    background: $navbar-bg;
+    .navbar-brand{
+      font-size: 14px;
+      height: 30px;
+      text-transform: uppercase;
+      margin-top: 9px;
+    }
+    .navbar-brand.no-logo{
+      font-size: 30px;
+      height: 30px;
+      text-transform: uppercase;
+      margin-top: 0px;
+    }
+    .navbar-brand.active{
+      background: $main-color;
+    }
+    .navbar-nav > li {
+      padding: 0px;
+      @media (max-width: 768px) {
+        padding: 0px;
+        text-align: left;
+      }
+      a {
+        color: $navbar-color;
+        text-transform: uppercase;
+      }
+      a:hover, a:focus {
+        background: $navbar-hover-bg;
+        color: $navbar-hover-color;
+      }
+    }
+    .navbar-toggle{
+      margin-top: 8px;
+    }
+}
+.navbar-znews{
+  .navbar-toggle {
+
+    border-color: #fff;
+    .icon-bar {
+      background-color: #222;
+    }
+  }
+  .navbar-toggle:hover, .navbar-toggle:focus{
+    background:#fff;
+  }
+  .navbar-collapse{
+    border-color:#ddd;
+  }
+}

@@ -1,0 +1,69 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700|Lato|Lora%3A400%2C700|Josefin+Sans%3A400%2C700&amp;subset=latin,latin-ext');
+html,
+body {
+  font-family: 'Lora',sans-serif;
+  font-size: 14px;
+  color: $primary-color;
+  line-height: 2em;
+  font-weight: 400;
+  background: $body-bg;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: $primary-color;
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.4em;
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+h3 {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+h4 {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+h5 {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+h6 {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+a {
+  color: $link-color;
+  outline: none;
+}
+a:hover,a:focus {
+  color: $link-hover-color;
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a img {
+  outline: none;
+  text-decoration: none;
+}
+button, input, select, textarea{
+  outline:none;
+}
+iframe {
+  display: block;
+  border: 0;
+}
+input[type="email"], input[type="text"], input[type="number"]{
+  font-family:"Lora", sans-serif;
+}

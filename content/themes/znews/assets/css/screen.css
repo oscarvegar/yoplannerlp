@@ -1,0 +1,1252 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+/*
+    0.  Default
+    1.  Basic
+    2.  Content
+    3.  News ticker 
+    4.  Navbar
+    5.  Search
+    6.  Cover/Home/Author/Tag
+    7.  Post cover
+    8.  Index Page
+    9.  Post Page
+    10. Home page widgets
+    11. Top page widget
+    12. Widgets
+    13. Email widget
+    14. Footer
+    15. Syntax highlighter
+    16. Responsive design fixes 
+*/
+/* ==================================== 
+Default 
+===================================== */
+@import url("http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700|Lato|Lora%3A400%2C700|Josefin+Sans%3A400%2C700&amp;subset=latin,latin-ext");
+html,
+body {
+  font-family: 'Lora',sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 2em;
+  font-weight: 400;
+  background: #fff;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.4em;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+a {
+  color: #222;
+  outline: none;
+}
+
+a:hover, a:focus {
+  color: #999;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a img {
+  outline: none;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  outline: none;
+}
+
+iframe {
+  display: block;
+  border: 0;
+}
+
+input[type="email"], input[type="text"], input[type="number"] {
+  font-family: "Lora", sans-serif;
+}
+
+/* ====================================
+Basic 
+===================================== */
+.znews-default {
+  background: #fff;
+}
+
+.header {
+  background: #363B4E;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-social {
+  background: #363B4E;
+  text-align: center;
+  float: right;
+  height: 40px;
+  padding: 6px 0;
+}
+.container-social a {
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.logo-main a {
+  color: #fff;
+}
+
+.tiny-logo {
+  padding-top: 5px !important;
+}
+
+.tiny-logo, .tiny-logo img {
+  height: 22px;
+}
+
+.no-tiny-logo, .no-tiny-logo:hover {
+  background: #222222 !important;
+  color: #fff !important;
+  font-size: 14px;
+}
+
+/* ====================================  
+Content
+===================================== */
+.container-znews {
+  padding-top: 0px;
+  background: #fff;
+}
+.container-znews .col-404 {
+  text-align: center;
+  color: #E74C3C;
+}
+.container-znews .col-404 h1 {
+  font-size: 70px;
+}
+.container-znews .col-404 h1, .container-znews .col-404 h4 {
+  color: #E74C3C;
+}
+.container-znews .col-404 .btn-404 {
+  background: #222;
+  color: #fff;
+  padding: 8px 15px;
+  line-height: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.responsive-vid {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.responsive-vid iframe, .responsive-vid object, .responsive-vid embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.margin-5 {
+  margin-left: 5px;
+}
+
+.imgbg, .imgbg:hover {
+  background: rgba(2, 10, 14, 0.43);
+}
+
+.spinnerBg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+}
+
+.spinner {
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  vertical-align: middle;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+}
+
+/* ==================================== 
+News ticker 
+===================================== */
+.container-ticker {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .container-ticker {
+    max-width: 100%;
+  }
+}
+.container-ticker .news-ticker {
+  float: left;
+  height: 40px;
+  overflow: hidden;
+}
+.container-ticker .news-ticker .ticker-heading {
+  float: left;
+  color: #363B4E;
+  background: #fff;
+  padding: 6px 10px;
+  margin-right: 20px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat',Arial,sans-serif;
+}
+.container-ticker .news-ticker ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container-ticker .news-ticker ul li {
+  height: 40px;
+}
+.container-ticker .news-ticker ul li a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+/* ==================================== 
+Navbar 
+===================================== */
+.navbar {
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-znews {
+  margin: 0 auto;
+  clear: both;
+  width: 100%;
+  min-height: 50px;
+  background: #fff;
+}
+.navbar-znews .navbar-brand {
+  font-size: 14px;
+  height: 30px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+.navbar-znews .navbar-brand.no-logo {
+  font-size: 30px;
+  height: 30px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.navbar-znews .navbar-brand.active {
+  background: #222222;
+}
+.navbar-znews .navbar-nav > li {
+  padding: 0px;
+}
+@media (max-width: 768px) {
+  .navbar-znews .navbar-nav > li {
+    padding: 0px;
+    text-align: left;
+  }
+}
+.navbar-znews .navbar-nav > li a {
+  color: #363B4E;
+  text-transform: uppercase;
+}
+.navbar-znews .navbar-nav > li a:hover, .navbar-znews .navbar-nav > li a:focus {
+  background: #efefef;
+  color: #111;
+}
+.navbar-znews .navbar-toggle {
+  margin-top: 8px;
+}
+
+.navbar-znews .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-znews .navbar-toggle .icon-bar {
+  background-color: #222;
+}
+.navbar-znews .navbar-toggle:hover, .navbar-znews .navbar-toggle:focus {
+  background: #fff;
+}
+.navbar-znews .navbar-collapse {
+  border-color: #ddd;
+}
+
+/* ==================================== 
+Search ghost 
+===================================== */
+@media (max-width: 768px) {
+  .navbar-search-right {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.navbar-znews li.znews-search {
+  padding: 0px;
+}
+.navbar-znews li.znews-search a {
+  background: #363B4E;
+  color: #eee;
+  cursor: pointer;
+}
+.navbar-znews li.znews-search a:hover {
+  background: #363B4E;
+  color: #fff;
+}
+
+.znews-search-awesome {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.95);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: none;
+}
+.znews-search-awesome .search-fullscreen-form {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: table;
+}
+.znews-search-awesome .search-fullscreen-form .search-ghost {
+  font-size: 30px;
+  line-height: 35px;
+  height: auto;
+  color: #000;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #000;
+  padding-left: 0;
+  padding-right: 0;
+  width: 700px;
+}
+.znews-search-awesome .search-fullscreen-form #searchsubmit {
+  display: none;
+}
+
+.search-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.search-close-btn .fa {
+  font-size: 40px;
+  color: #000;
+}
+
+.znews-search-results {
+  max-width: 700px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99;
+  margin-left: -1px;
+  color: #222;
+}
+.znews-search-results .search-info {
+  padding: 5px;
+}
+.znews-search-results .result-info {
+  padding: 5px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.znews-search-results .result-info a {
+  color: #222;
+  font-style: italic;
+}
+
+/* ==================================== 
+Cover images 
+===================================== */
+.cover-image-home {
+  height: 400px;
+  background-position: top;
+  background-size: cover;
+}
+.cover-image-home .cover-shadow {
+  background: rgba(2, 10, 14, 0.43);
+  min-height: 400px;
+}
+.cover-image-home .home-cover-main {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  margin-top: 140px;
+}
+.cover-image-home .home-cover-main h1 {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .cover-image-home .home-cover-main h1 {
+    font-size: 20px;
+  }
+}
+.cover-image-home .home-cover-main .description {
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .cover-image-home .home-cover-main .description {
+    font-size: 17px;
+  }
+}
+.cover-image-home .home-cover-main .tag-description {
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  .cover-image-home .home-cover-main .tag-description {
+    font-size: 14px;
+  }
+}
+
+.no-bg-cover {
+  height: 180px;
+  background-color: #363B4E;
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+}
+.no-bg-cover .cover-shadow {
+  min-height: 180px;
+}
+.no-bg-cover .home-cover-main {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 30px;
+}
+.no-bg-cover h1 {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .no-bg-cover h1 {
+    font-size: 20px;
+  }
+}
+
+/* ====================================   
+Author cover image 
+===================================== */
+.author-cover-main .home-cover-main {
+  margin-top: 50px;
+}
+.author-cover-main .home-cover-main .avatar-cover img {
+  width: 100px;
+  border-radius: 50%;
+}
+.author-cover-main .home-cover-main .website a {
+  color: #fff;
+}
+.author-cover-main .znews-meta {
+  font-size: 14px;
+}
+.author-cover-main .author-description {
+  font-size: 17px;
+}
+
+.no-author-cover {
+  height: 350px;
+  background-color: #363B4E;
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+}
+.no-author-cover .cover-shadow {
+  min-height: 350px;
+}
+
+/* ====================================   
+Post cover image 
+===================================== */
+.cover-image-post {
+  height: 400px;
+  background-size: cover;
+  background-position: top;
+}
+
+.no-cover-single {
+  height: 100px;
+  background-color: #363B4E;
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+}
+.no-cover-single .cover-shadow {
+  min-height: 100px;
+}
+.no-cover-single .home-cover-main {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 30px;
+}
+.no-cover-single h1 {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .no-cover-single h1 {
+    font-size: 20px;
+  }
+}
+
+/* ==================================== 
+Index pages content 
+===================================== */
+.post-outer {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0 20px;
+}
+.post-outer .featured-post-img {
+  background-size: cover;
+  background-position: center;
+  height: 215px;
+  margin-bottom: 20px;
+}
+.post-outer .post-title {
+  font-size: 24px;
+  margin-top: 0px;
+}
+.post-outer .fa {
+  color: #363B4E;
+}
+.post-outer .recent-post-image {
+  padding: 0px;
+}
+
+/* ====================================   
+Featured post in loop 
+===================================== */
+.featured-post {
+  display: block;
+  position: absolute;
+  width: 146px;
+  height: 46px;
+  left: -32px;
+  top: -13px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding-top: 2px;
+  text-transform: uppercase;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+.featured-post .label-f {
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
+.featured-post img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+/* ====================================   
+Post meta in index 
+===================================== */
+.post-meta {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.post-meta span {
+  margin-right: 10px;
+}
+
+/* ====================================   
+Pagination 
+===================================== */
+.znews-pagination {
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  font-style: italic;
+}
+.znews-pagination .page-counts {
+  text-align: center;
+}
+.znews-pagination .new-posts {
+  float: left;
+}
+.znews-pagination .old-posts {
+  float: right;
+}
+.znews-pagination .old-posts, .znews-pagination .new-posts {
+  padding: 10px 15px;
+  background: #111;
+  color: #fff;
+  border-radius: 50%;
+}
+.znews-pagination .old-posts .fa, .znews-pagination .new-posts .fa {
+  font-size: 14px;
+}
+
+/* ==================================== 
+Post page design 
+===================================== */
+.post-outer .featured-img-single {
+  background-size: cover;
+  background-position: center;
+}
+.post-outer img {
+  width: 100%;
+}
+
+.post-outer.single-post {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.post-outer.single-post .post-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+.post-outer.single-post .post-content {
+  padding: 20px 10px;
+}
+.post-outer.single-post .post-content .post-description {
+  font-size: 15px;
+}
+.post-outer.single-post .post-tags-post {
+  color: #222;
+  padding-top: 10px;
+  float: left;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+/* ====================================  
+Share links 
+===================================== */
+.znews-share {
+  color: #222;
+  padding-top: 10px;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.znews-share .share ul {
+  padding: 0px;
+  margin: 0px;
+}
+.znews-share .share ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+.znews-share .share ul li.share-pin {
+  background: #eee;
+}
+
+/* ====================================  
+Author box 
+===================================== */
+.post-author {
+  padding: 30px;
+  text-align: center;
+}
+.post-author img {
+  width: 120px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* ====================================  
+Prev next links 
+===================================== */
+.znews-prev-next {
+  text-align: center;
+  padding: 0 10px;
+}
+.znews-prev-next .prev-next-col {
+  padding: 0px;
+}
+.znews-prev-next .prev-next-nav {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 150px;
+}
+.znews-prev-next .prev-next-nav .prev-next {
+  background-color: rgba(2, 10, 14, 0.43);
+  height: 150px;
+  padding: 30px 20px;
+}
+.znews-prev-next .prev-next-nav .prev-next span, .znews-prev-next .prev-next-nav .prev-next h3 {
+  color: #fff;
+}
+
+/* ====================================  
+Comments 
+===================================== */
+.znews-comments {
+  padding: 30px;
+  text-align: center;
+}
+
+/* ====================================  
+Related posts 
+===================================== */
+.related-posts {
+  padding: 10px;
+  text-align: left;
+}
+.related-posts .col-related {
+  padding: 0px;
+}
+.related-posts .rel-link {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  display: block;
+  color: #fff;
+  position: relative;
+}
+.related-posts .related-shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.44);
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ==================================== 
+Home page widgets 
+===================================== */
+h3.title-widget-home {
+  padding: 6px 0;
+  position: relative;
+  margin: 0;
+  float: left;
+  width: 100%;
+  font-family: 'Lora',sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+h3.title-widget-home .more-tag {
+  float: right;
+}
+h3.title-widget-home span {
+  color: #000;
+  padding: 8px 0px;
+}
+
+.single-box {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+.single-box .single-left {
+  padding: 15px 15px 15px 0;
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  clear: right;
+}
+@media (max-width: 768px) {
+  .single-box .single-left {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+.single-box .single-left h2 {
+  font-size: 22px;
+  line-height: 28px;
+}
+.single-box .single-left .slider-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.single-box .single-left .slider-image .fa {
+  color: #222222;
+  font-size: 250px;
+}
+.single-box .single-right {
+  width: 50%;
+  float: right;
+  clear: right;
+  overflow: hidden;
+  padding: 15px 15px 15px 0;
+}
+@media (max-width: 768px) {
+  .single-box .single-right {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+.single-box .single-right h3.post-title {
+  margin-top: 0;
+  line-height: 24px;
+  font-size: 18px;
+}
+.single-box .single-right .slider-image {
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+.single-box .single-right .slider-image .fa {
+  color: #222222;
+  font-size: 74px;
+}
+.single-box .fa {
+  color: #363B4E;
+}
+
+/* ==================================== 
+Top widget 
+===================================== */
+.single-top-box .single-right {
+  float: left;
+  min-height: 125px;
+}
+
+#top-widget {
+  padding: 0 15px;
+  float: left;
+  width: 100%;
+}
+
+.top-box .single-left .slider-image {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+}
+.top-box .single-left .slider-image h3 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.44);
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  color: #fff;
+  font-size: 20px;
+}
+.top-box .single-right {
+  width: 25%;
+  float: left;
+  clear: right;
+  overflow: hidden;
+  padding: 15px 15px 15px 0;
+}
+@media (max-width: 768px) {
+  .top-box .single-right {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+.top-box .single-right .slider-image {
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  width: 100%;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .top-box .single-right .slider-image {
+    height: 250px;
+  }
+}
+.top-box .single-right .slider-image h3 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.44);
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  color: #fff;
+  font-size: 16px;
+}
+.top-box .single-r-right {
+  padding: 15px 0 15px 0;
+}
+
+/* ==================================== 
+Widgets 
+===================================== */
+.sidebar {
+  padding-right: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 0px;
+  }
+}
+.sidebar .znews-widget .content {
+  background: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.sidebar .znews-widget .fb-widget {
+  text-align: center;
+}
+.sidebar .znews-widget h3 {
+  padding: 6px 0;
+  position: relative;
+  margin: 0;
+  text-align: left;
+  font-size: 22px;
+  font-family: 'Lora',sans-serif;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.sidebar .znews-widget h3 span {
+  padding: 8px 0;
+  color: #111;
+}
+.sidebar .znews-widget .tags a {
+  background: #222222;
+  color: #fff;
+  margin: 0 6px 6px 0;
+  padding: 6px 9px;
+  line-height: 1em;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.sidebar .znews-widget .tags a:hover {
+  background: #363B4E;
+  color: #fff;
+}
+.sidebar .recent-post .recent-single-post {
+  margin-bottom: 10px;
+}
+.sidebar .recent-post .recent-single-post .post-img {
+  background: #222;
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+.sidebar .recent-post .recent-single-post .post-img .fa {
+  color: #fff;
+  font-size: 60px;
+  line-height: 80px;
+  padding-left: 8px;
+}
+
+.post-info .date {
+  font-style: normal;
+  font-size: 13px;
+  color: #444;
+}
+
+/* ==================================== 
+Email widget 
+===================================== */
+.email-subscribe {
+  padding: 26px;
+  background: #ddd;
+}
+.email-subscribe input {
+  border: none;
+  width: 100%;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  height: 45px;
+  font-size: 15px;
+  line-height: 19px;
+  font-style: italic;
+}
+.email-subscribe input[type="email"], .email-subscribe input[type="text"], .email-subscribe input[type="number"] {
+  background: #fff;
+  color: #222;
+  margin-top: 18px;
+}
+.email-subscribe input[type="submit"], .email-subscribe input[type="submit"], .email-subscribe button {
+  font-family: "Montserrat", sans-serif;
+  background: #222;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.email-subscribe input[type="submit"]:hover, .email-subscribe input[type="submit"]:hover, .email-subscribe button:hover {
+  background: #363B4E;
+  color: #fff;
+}
+
+/* ==================================== 
+Footer  
+===================================== */
+.content-footer {
+  margin-top: 50px;
+  background: #111;
+  color: #fff;
+}
+.content-footer a {
+  color: #fff;
+}
+
+.copyright {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ==================================== 
+syntax highlighter css default
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+===================================== */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f0f0f0;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+  color: black;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-name,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute,
+.tp .hljs-variable {
+  color: #800;
+}
+
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+  color: #888;
+}
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+  color: #080;
+}
+
+.hljs-label,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+  color: #88f;
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-doctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status,
+.tp .hljs-data,
+.tp .hljs-io {
+  font-weight: bold;
+}
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis,
+.tp .hljs-units {
+  font-style: italic;
+}
+
+.nginx .hljs-built_in {
+  font-weight: normal;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}
+
+/* ==================================== 
+Responsive design fixes 
+===================================== */
+@media (max-width: 768px) {
+  .container-social {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=screen.css.map */

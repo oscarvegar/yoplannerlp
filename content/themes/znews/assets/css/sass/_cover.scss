@@ -1,0 +1,117 @@
+.cover-image-home{
+  height: 400px;
+  background-position: top;
+  background-size: cover;
+  .cover-shadow{
+    background:rgba(2, 10, 14, 0.43);
+    min-height: 400px;
+  }
+  .home-cover-main{
+    text-align: center;
+    font-size: 50px;
+    color: $cover-image-color;
+    margin-top:140px;
+    h1{
+      color: $cover-image-color;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    .description{
+      font-size: 25px;
+      @media (max-width: 768px) {
+        font-size: 17px;
+      }
+    }
+    .tag-description{
+      font-size:17px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.no-bg-cover{
+  height:180px;
+  background-color: $cover-bg-no-image;
+  background-position: top;
+  background-size: cover;
+  color:$cover-image-color;
+  .cover-shadow{
+    min-height: 180px;
+  }
+  .home-cover-main{
+    text-align: center;
+    font-size: 30px;
+    color: $cover-image-color;
+    margin-top: 30px;
+  }
+  h1{
+    color: $cover-image-color;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}
+/* ====================================   
+Author cover image 
+===================================== */
+.author-cover-main {
+  .home-cover-main{
+    margin-top:50px;
+    .avatar-cover img{
+      width:100px;
+      border-radius:50%;
+    }
+    .website a{
+      color: #fff;
+    }
+  }
+
+  .znews-meta{
+    font-size:14px;
+  }
+  .author-description{
+    font-size:17px;
+  }
+}
+.no-author-cover {
+  height:350px;
+  background-color: $cover-bg-no-image;
+  background-position: top;
+  background-size: cover;
+  color:$cover-image-color;
+  .cover-shadow{
+    min-height: 350px;
+  }
+}
+/* ====================================   
+Post cover image 
+===================================== */
+.cover-image-post{
+  height: 400px;
+  background-size: cover;
+  background-position: top
+}
+.no-cover-single{
+  height:100px;
+  background-color: $cover-bg-no-image;
+  background-position: top;
+  background-size: cover;
+  color:$cover-image-color;
+  .cover-shadow{
+    min-height: 100px;
+  }
+  .home-cover-main{
+    text-align: center;
+    font-size: 30px;
+    color: $cover-image-color;
+    margin-top: 30px;
+  }
+  h1{
+    color: $cover-image-color;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}

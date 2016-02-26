@@ -1,0 +1,41 @@
+<div class="znews-search-awesome">
+  <div class="search-fullscreen-form">
+    <div class="search-close-btn"><i class="fa fa-times"></i></div>
+    <form method="get" id="searchform" class="searchform" >
+        <input type="search" class="field search-ghost" placeholder="Search">
+        <input type="submit" class="submit btn" id="searchsubmit" value="Search">
+    </form>
+    <div class="znews-search-results"></div>
+  </div>
+</div>
+<footer class="content-footer znews-default">
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-12">
+                &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>.
+                </div>                
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{asset "js/jquery.min.js"}}"></script>
+{{ghost_foot}}
+<div id="fb-root"></div>
+<script type="text/javascript">
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script src="{{asset "js/jquery.ghostrelated.js"}}"></script>
+<script src="{{asset "js/ghost.hunder.js"}}"></script>
+<script src="{{asset "js/highlighter.js"}}"></script>
+<script type="text/javascript">
+(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<script src="{{asset "js/script.js"}}"></script>

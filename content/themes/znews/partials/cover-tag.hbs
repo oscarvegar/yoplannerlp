@@ -1,0 +1,19 @@
+<div class="cover-image-home tag-cover {{#if tag.image}}" style="background-image: url({{tag.image}});"{{else}}no-bg-cover"{{/if}}>
+	<div class="cover-shadow">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="home-cover-main">
+						<h1 class="tag-title">{{tag.name}}</h1>
+						<div class="description">
+							<span><i class="fa fa-folder fa-fw"></i>Total {{plural pagination.total singular='% Post' plural='% Posts' empty='0 Post' }}</span>
+						</div>
+						{{#if tag.description}}
+						<div class="tag-description">{{tag.description}}</div>
+						{{/if}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+.container-ticker{
+  max-width: 50%;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+  .news-ticker {
+    float: left;
+    height: 40px;
+    overflow: hidden; 
+    .ticker-heading{
+      float: left;
+      color:$ticker-heading-color;
+      background:$ticker-heading-bg;
+      padding: 6px 10px;
+      margin-right: 20px;
+      height: 40px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Montserrat',Arial,sans-serif;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        height: 40px; 
+        a {
+          color: $newsticker-color;
+          font-size: 12px;
+          line-height: 40px;
+          text-transform: uppercase;
+        }
+      } 
+    }
+  }
+}
