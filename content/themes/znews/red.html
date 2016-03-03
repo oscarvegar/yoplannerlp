@@ -87,6 +87,9 @@
 
             <!-- Section Title-->    
             <div class="section-title-02">
+                <!-- Parallax Background -->
+                <div class="bg_parallax image_03_parallax"></div>
+                <!-- Parallax Background -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -95,25 +98,21 @@
                     </div>
                 </div>  
             </div>   
+
             <!-- End Section Title-->
 
             <!--Content Central -->
             <div class="content-central">
                 
-                <!-- End content info - page Fill with -->
+                
+                 <!-- End content info -->
                 <div class="content_info">
-                    <div class="paddings-mini">
+                    <div class="paddings">
+                        <!-- content-->
                         <div class="container">
                             <div class="row">
-                                <!-- Sidebars -->
-                                <div class="col-md-2">
-                                    
-
-                                </div>
-                                <!-- End Sidebars -->
-
-                                <div class="col-md-8" ng-controller="CotizarCtrl">
-                                    <h3>Contacto</h3>
+                                <div class="col-md-6">
+                                <h3>Contacto</h3>
                                     <!--<p class="lead">
                                        Lorem ipsum dolor sit amet, ad vim erat posse. Cu nam doctus mentitum consulatu. Patrioque mnesarchum complectitur quo ex, utinam adipiscing dissentiunt mea an, id eos summo democritum. Pro et congue tation, est id iriure equidem antiopam. Suas case duo ne.
                                     </p>-->
@@ -123,28 +122,45 @@
                                         <input ng-model="data.phone" type="text" placeholder="Teléfono " name="Phone" required="">
                                         <label style="width:100%; text-align:center"><h3 style="color:#aaa;">Experiencia organizando</h3></label>
                                         <div class="row">
-                                          <div class="col col-md-4"><label style="font-size:20px;">Viaje Personal</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbvp" type="checkbox" style="width:20px;"></div>
-                                          <div class="col col-md-4"><label style="font-size:20px;">Viaje de Grupo</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbvg" type="checkbox" style="width:20px;"></div>
-                                          <div class="col col-md-4"> <label style="font-size:20px;">Evento Corporativo</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbec" type="checkbox" style="width:20px;"></div>
+                                          <div class="col col-md-4"><label style="font-size:15px;">Viaje Personal</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbvp" type="checkbox" style="width:15px;"></div>
+                                          <div class="col col-md-4"><label style="font-size:15px;">Viaje de Grupo</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbvg" type="checkbox" style="width:15px;"></div>
+                                          <div class="col col-md-4"> <label style="font-size:15px;">Evento Corporativo</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbec" type="checkbox" style="width:15px;"></div>
                                         </div>
                                         <div class="row">
                                             <div class="col col-md-4">
-                                              <label style="font-size:20px;">Evento Social</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbes" type="checkbox" style="width:20px;">
+                                              <label style="font-size:15px;">Evento Social</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbes" type="checkbox" style="width:15px;">
                                             </div>
                                             <div class="col col-md-4">
-                                               <label style="font-size:20px;">Crucero</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbcr" type="checkbox" style="width:20px;">
+                                               <label style="font-size:15px;">Crucero</label>&nbsp;&nbsp;&nbsp;<input ng-model="cbcr" type="checkbox" style="width:15px;">
                                             </div>
+
                                         </div>
                                         <br>
                                         <input type="submit" name="Submit" value="Enviar" class="btn btn-primary">
                                     </form> 
                                     <div id="result"></div>  
                                 </div>
+                                
+                                <div class="col-md-6" >
+                                    <!-- Single Carousel-->
+                                    <div id="single-carousel" >
+                                        <div class="img-hover">                                        
+                                            <div class="overlay"> <a href="img/cotiza-slide-1.jpg" class="fancybox"><i class="fa fa-plus-circle"></i></a></div>
+                                            <img style="height:450px;" src="img/cotiza-slide-1.jpg" alt="" class="img-responsive">
+                                        </div>                                        
+                                        <div class="img-hover">
+                                            <div class="overlay"> <a href="img/cotiza-slide-2.jpg" class="fancybox"><i class="fa fa-plus-circle"></i></a></div>
+                                            <img style="height:450px;" src="img/cotiza-slide-2.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <!-- End Single Carousel-->
+                                </div>
                             </div>
                         </div>
+                        <!-- End content-->
                     </div>
                 </div>   
-                <!-- End content info - page Fill with  --> 
+                <!-- End content info --> 
 
             </div>
             <!-- End Content Central -->

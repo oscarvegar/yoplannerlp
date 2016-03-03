@@ -87,6 +87,9 @@
 
             <!-- Section Title-->    
             <div class="section-title-02">
+                <!-- Parallax Background -->
+                <div class="bg_parallax image_02_parallax"></div>
+                <!-- Parallax Background -->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -100,16 +103,16 @@
             <!--Content Central -->
             <div class="content-central">
                 
-                <!-- End content info - page Fill with -->
+               
+
+                <!-- End content info -->
                 <div class="content_info">
-                    <div class="paddings-mini">
+                    <div class="paddings">
+                        <!-- content-->
                         <div class="container">
                             <div class="row">
-                                <!-- Sidebars -->
-                                
-                                <div class="col-md-2">
-                                </div>
-                                <div class="col-md-8" ng-controller="CotizarCtrl">
+                                <div class="col-md-6">
+                                  
                                     <h3>Cotizar</h3>
                                     <!--<p class="lead">
                                        Lorem ipsum dolor sit amet, ad vim erat posse. Cu nam doctus mentitum consulatu. Patrioque mnesarchum complectitur quo ex, utinam adipiscing dissentiunt mea an, id eos summo democritum. Pro et congue tation, est id iriure equidem antiopam. Suas case duo ne.
@@ -119,25 +122,41 @@
                                         <input type="email" placeholder="Email" ng-model="data.email" name="Email" required="">
                                         <input type="text" placeholder="Teléfono " ng-model="data.phone" name="Phone" required="">
                                         <select style="width:100%; padding:8px 5px; color:#aaa; border:#dedede solid 1px;" ng-model="data.tipo" required>
-                                        	<option value="">Tipo de evento</option>
-                                        	<option value="Viaje Personal">Viaje Personal</option>
-                                        	<option value="Viaje de Grupo">Viaje de Grupo</option>
-                                        	<option value="Evento Corporativo">Evento Corporativo</option>
-                                        	<option value="Evento Social">Evento Social</option>
-                                        	<option value="Crucero">Crucero</option>
-										                    </select>
+                                            <option value="">Tipo de evento</option>
+                                            <option value="Viaje Personal">Viaje Personal</option>
+                                            <option value="Viaje de Grupo">Viaje de Grupo</option>
+                                            <option value="Evento Corporativo">Evento Corporativo</option>
+                                            <option value="Evento Social">Evento Social</option>
+                                            <option value="Crucero">Crucero</option>
+                                                            </select>
                                         <br>
                                         <br>
                                         <textarea ng-model="data.comments" placeholder="Comentarios..."></textarea>
                                         <input type="submit" name="Submit" value="Enviar" class="btn btn-primary">
                                     </form> 
-                                    <div id="result"></div>  
+                                    <div id="result"></div>                                      
+                                </div>
+                                
+                                <div class="col-md-6" >
+                                    <!-- Single Carousel-->
+                                    <div id="single-carousel" >
+                                        <div class="img-hover">                                        
+                                            <div class="overlay"> <a href="img/cotiza-slide-1.jpg" class="fancybox"><i class="fa fa-plus-circle"></i></a></div>
+                                            <img style="height:450px;" src="img/cotiza-slide-1.jpg" alt="" class="img-responsive">
+                                        </div>                                        
+                                        <div class="img-hover">
+                                            <div class="overlay"> <a href="img/cotiza-slide-2.jpg" class="fancybox"><i class="fa fa-plus-circle"></i></a></div>
+                                            <img style="height:450px;" src="img/cotiza-slide-2.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <!-- End Single Carousel-->
                                 </div>
                             </div>
                         </div>
+                        <!-- End content-->
                     </div>
                 </div>   
-                <!-- End content info - page Fill with  --> 
+                <!-- End content info --> 
 
             </div>
             <!-- End Content Central -->
