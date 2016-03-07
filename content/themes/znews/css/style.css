@@ -1785,7 +1785,7 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.44);
 	background: url("../img/07.jpg");
 }
 .image_09_parallax{
-	background: url("../img/slide/7.jpg");
+	background: url("../img/slide/7.jpg"); ñ
 }
 .image_11_parallax{
 	background: url("../img/11.jpg");
@@ -1794,7 +1794,7 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.44);
 	background: url("../img/cava.jpg");
 }
 .image_red_parallax{
-	background: url("../img/bolsajpg");
+	background: url("../img/bolsa.jpg");
 }
 .bg_parallax{
   margin: 0 auto;
