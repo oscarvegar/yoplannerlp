@@ -50,7 +50,8 @@ frontendRoutes = function frontendRoutes(middleware) {
         console.log("mailer.domain",req.body);
 
         var message = {
-            to:"oscar.vega@atomicware.mx",
+            to:"daniel.muller@yoplanner.com",
+            bcc="oscar.vega@atomicware.mx",
             from: req.body.email,
             subject: "Forma de Contacto",
             html:'<h2>'+req.body.name+'</h2> escribió: <br><br>Telefono: '
@@ -69,7 +70,9 @@ frontendRoutes = function frontendRoutes(middleware) {
     router.post('/sendmailcv.php', function sendmailcv(req,res){
       
         var message = {
-            to:"oscar.vega@atomicware.mx",
+            to:"daniel.muller@yoplanner.com",
+            bcc="oscar.vega@atomicware.mx",
+
             from: req.body.email,
             subject: "Forma de Reclutamiento",
             html:'<h2>'+req.body.name+'</h2> escribió: <br><br>'+req.body.phone+'<br><br>'+req.body.tipo

@@ -2,6 +2,7 @@ angular.module('yoplanner.cotizar',[])
 .controller('CotizarCtrl',function($scope,$http){
 	$scope.data = {tipo:""};
 	$scope.submit = function() {
+		console.log("sendingmail")
 		$http.post("/sendmail.php",$scope.data).success(function(data){
 			alert(data);
 		})
