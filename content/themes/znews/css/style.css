@@ -1790,6 +1790,12 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.44);
 .image_11_parallax{
 	background: url("../img/11.jpg");
 }
+.image_cotiza_parallax{
+	background: url("../img/cava.jpg");
+}
+.image_red_parallax{
+	background: url("../img/bolsajpg");
+}
 .bg_parallax{
   margin: 0 auto;
   padding: 0;

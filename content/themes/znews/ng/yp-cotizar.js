@@ -5,6 +5,7 @@ angular.module('yoplanner.cotizar',[])
 		console.log("sendingmail")
 		$http.post("/sendmail.php",$scope.data).success(function(data){
 			alert(data);
+			$scope.data = {};
 		})
 	};
 
@@ -27,6 +28,8 @@ angular.module('yoplanner.cotizar',[])
 		}
 		$http.post("/sendmailcv.php",$scope.data).success(function(data){
 			alert(data);
+			$scope.data = {};
+
 		})
 	};
 
