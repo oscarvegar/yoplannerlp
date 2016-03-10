@@ -519,7 +519,7 @@ Post cover image
 .cover-image-post {
   height: 400px;
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 .no-cover-single {
