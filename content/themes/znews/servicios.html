@@ -66,7 +66,14 @@
 
 					<li><a href="index.html">INICIO </a></li>
                     <li> <a href="nosotros.html">¿QUIÉNES SOMOS?</a></li>
-                    <li> <a href="servicios.html">SERVICIOS</a></li>      
+                    <li> <a href="servicios.html">SERVICIOS</a>
+
+                          <li> <a href="">CONTACTO</a>
+                            <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
+                                <li><a href="cotizar.html">COTIZA</a> </li>
+                                <li><a href="red.html">UNETE</a> </li>
+                            </ul>
+                          </li></li>      
                     <li> <a href="blog">BLOG</a></li>
                     <li> <a class="btn btn-primary btn-rfp" target="_blank" href="http://cotizador.yoplanner.com">RFP</a></li>
 
@@ -255,5 +262,22 @@
         <!--MAIN FUNCTIONS-->
         <script type="text/javascript" src="js/main.js"></script>
         <!-- ======================= End JQuery libs =========================== -->
+
+        <script>
+              (function(i, s, o, g, r, a, m) {
+                  i['GoogleAnalyticsObject'] = r;
+                  i[r] = i[r] || function() {
+                      (i[r].q = i[r].q || []).push(arguments)
+                  }, i[r].l = 1 * new Date();
+                  a = s.createElement(o),
+                      m = s.getElementsByTagName(o)[0];
+                  a.async = 1;
+                  a.src = g;
+                  m.parentNode.insertBefore(a, m)
+              })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+              ga('create', 'UA-37524502-5', 'auto');
+              ga('send', 'pageview');
+        </script>
     </body>
 </html>
