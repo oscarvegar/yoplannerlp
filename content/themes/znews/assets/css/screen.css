@@ -419,7 +419,7 @@ Cover images
 ===================================== */
 .cover-image-home {
   height: 400px;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 .cover-image-home .cover-shadow {
